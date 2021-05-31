@@ -423,7 +423,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-modal" data-modal-close>
-          <svg width="11" height="11">
+          <svg class="close-modal-icon" width="11" height="11">
             <use href="./images/icons.svg#close-modal"></use>
           </svg>
         </button>
@@ -433,14 +433,14 @@
             <span class="label-text">Имя</span>
             <input class="input-field" type="text" name="user-name" autofocus></input>
             <svg class="call-back-input-icon">
-              <use href="./images/icons.svg#"></use>
+              <use href="./images/icons.svg#icon-person-black"></use>
             </svg>
           </label>
           <label class="form-field">
             <span class="label-text">Телефон</span>
             <input class="input-field" type="tel" name="phone">
               <svg class="call-back-input-icon">
-                <use href="./images/icons.svg#"></use>
+                <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </input>
           </label>
@@ -448,17 +448,17 @@
             <span class="label-text">Почта</span>
             <input class="input-field" type="email" name="email">
               <svg class="call-back-input-icon">
-                <use href="./images/icons.svg#"></use>
+                <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </input>
           </label>
           <label class="form-field">
             <span class="label-text">Комментарий</span>
-            <textarea class="textarea-field" name="coment" placeholder="Введите текст"></textarea>
+            <textarea class="textarea-field" name="comment" placeholder="Введите текст"></textarea>
           </label>
           <div class="agreement">
-            <input type="checkbox" name="agreement" value="agree"></input>
-            <label class="agreement-text">Соглашаюсь с рассылкой и принимаю
+            <input type="checkbox" name="agreement" value="agree" id="agreement"></input>
+            <label class="agreement-text" for="agreement">Соглашаюсь с рассылкой и принимаю
               <a href="">Условия договора</a>
             </label>
           </div>
