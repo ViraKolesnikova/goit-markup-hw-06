@@ -408,7 +408,7 @@
         <form class="subscribing-form">
           <label for="email" class="subscribe-text">Подпишитесь на рассылку</label>
           <div class="subscribing-area">            
-            <input type="email" name="email" id="email" placeholder="E-mail" class="email-input"/>   
+            <input type="email" name="email" id="email" placeholder="E-mail" class="email-input" required/>   
             <button type="submit" class="subscribe-btn">Подписаться
               <svg class="telegram-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-telegram"></use>
@@ -431,41 +431,46 @@
         <form name="call-back-form" autocomplete="on" class="call-back-form">
           <label class="form-field">
             <span class="label-text">Имя</span>
-            <input class="input-field" type="text" name="user-name" autofocus></input>
-            <svg class="call-back-input-icon">
-              <use href="./images/icons.svg#icon-person-black"></use>
-            </svg>
+            <div class="input-with-icon">
+              <input class="input-field" type="text" name="user-name" autofocus>
+              <svg class="call-back-input-icon">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
           </label>
           <label class="form-field">
             <span class="label-text">Телефон</span>
-            <input class="input-field" type="tel" name="phone">
+            <div class="input-with-icon">
+              <input class="input-field" type="tel" name="phone">
               <svg class="call-back-input-icon">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
-            </input>
+            </div>
           </label>
           <label class="form-field">
             <span class="label-text">Почта</span>
-            <input class="input-field" type="email" name="email">
+            <div class="input-with-icon">
+              <input class="input-field" type="email" name="email">
               <svg class="call-back-input-icon">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
-            </input>
-          </label>
+            </div>
+         </label>
           <label class="form-field">
             <span class="label-text">Комментарий</span>
             <textarea class="textarea-field" name="comment" placeholder="Введите текст"></textarea>
           </label>
-          <div class="agreement">
-            <input type="checkbox" name="agreement" value="agree" id="agreement"></input>
-            <label class="agreement-text" for="agreement">Соглашаюсь с рассылкой и принимаю
-              <a href="">Условия договора</a>
-            </label>
-          </div>
+          <label class="agreement-text" for="agreement">
+            <input class="checkbox" type="checkbox" name="agreement" value="agreement" id="agreement">  
+            <span class="checkbox-icon"></span>
+            Соглашаюсь с рассылкой и принимаю 
+            <a href="">Условия договора</a>
+          </label>          
           <button class="call-back-submit-btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>   
     <script src="./js/modal.js"></script>
+    
   </body>
 </html>
