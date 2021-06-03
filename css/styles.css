@@ -474,7 +474,7 @@ footer > .container {
 .subscribe-text {
   margin-bottom: 20px;
   color: var(--white-color);
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -811,6 +811,7 @@ footer > .container {
 
 .checkbox-icon {
   display: inline-block;
+  vertical-align: middle;
   width: 16px;
   height: 15px;
   margin-right: 7px;
@@ -831,6 +832,10 @@ footer > .container {
   background-origin: border-box;
 }
 
+.checkbox-agreement {
+  vertical-align: middle;
+}
+
 .checkbox {
   -webkit-appearance:none;
   -moz-appearance:none;
@@ -840,8 +845,7 @@ footer > .container {
 }
 
 .agreement-text {
-  display: flex;
-  align-items: center;
+  display: block;
   margin-left: 12px;
   margin-bottom: 30px;
   font-size: 14px;

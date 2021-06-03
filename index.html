@@ -431,30 +431,30 @@
         <form name="call-back-form" autocomplete="on" class="call-back-form">
           <label class="form-field">
             <span class="label-text">Имя</span>
-            <div class="input-with-icon">
+            <span class="input-with-icon">
               <input class="input-field" type="text" name="user-name" autofocus>
               <svg class="call-back-input-icon">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="form-field">
             <span class="label-text">Телефон</span>
-            <div class="input-with-icon">
+            <span class="input-with-icon">
               <input class="input-field" type="tel" name="phone">
               <svg class="call-back-input-icon">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="form-field">
             <span class="label-text">Почта</span>
-            <div class="input-with-icon">
+            <span class="input-with-icon">
               <input class="input-field" type="email" name="email">
               <svg class="call-back-input-icon">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
-            </div>
+            </span>
          </label>
           <label class="form-field">
             <span class="label-text">Комментарий</span>
@@ -463,8 +463,10 @@
           <label class="agreement-text" for="agreement">
             <input class="checkbox" type="checkbox" name="agreement" value="agreement" id="agreement">  
             <span class="checkbox-icon"></span>
-            Соглашаюсь с рассылкой и принимаю 
-            <a href="">Условия договора</a>
+            <span class="checkbox-agreement">
+              Соглашаюсь с рассылкой и принимаю 
+              <a href="">Условия договора</a>
+            </span>
           </label>          
           <button class="call-back-submit-btn" type="submit">Отправить</button>
         </form>
